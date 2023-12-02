@@ -4,8 +4,8 @@ namespace Minimarket{
 		std::string feedback;
 		int rate;
 	public:
-		FeedBackSystem(const std::string& Customer_id, const std::string& Name, const std::string& Email, std::string feedback, int rate)
-			: Customer(Customer_id, Name, Email), feedback(feedback), rate(rate) {}
+		FeedBackSystem(const std::string& CustomerId, const std::string& Name, const std::string& Email, std::string feedback, int rate)
+			: Customer(CustomerId, Name, Email), feedback(feedback), rate(rate) {}
 		void ReceivedFeedback();
 	};
 }
