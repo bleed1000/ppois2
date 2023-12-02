@@ -12,7 +12,7 @@ namespace Minimarket {
 	}
 
 	void Customer::place_order(const Product& product) {
-		cout << "Customer " << name << " with " << customer_id << " id ordered " << product.GetName();
+		cout << "Customer " << name << " with " << CustomerId << " id ordered " << product.GetName();
 	}
 
 	double DiscountableProduct::ApplyDiscount(double originalPrice) {
@@ -32,7 +32,7 @@ namespace Minimarket {
 	}
 
 	double PaymentProcessor::RemainingMoney() {
-		return sum_on_card -= total;
+		return SumOnCard -= total;
 	}
 
 	void Check::Printing() {
@@ -48,7 +48,7 @@ namespace Minimarket {
 	}
 
 	void Stock::StockInfo() {
-		cout << "Name: " << product_name_s << " Id: " << product_id_s << " Quantity: " << quantity_s;
+		cout << "Name: " << ProductName << " Id: " << ProductId << " Quantity: " << Quantity;
 	}
 
 	void Subscription::SubscriptionInfo(const Customer& customer, int duration) {
