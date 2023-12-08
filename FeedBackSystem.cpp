@@ -1,11 +1,11 @@
 namespace Minimarket{
 	class FeedBackSystem : protected Customer {
 	protected:
-		std::string feedback;
-		int rate;
+		std::string Feedback;
+		int Rate;
 	public:
-		FeedBackSystem(const std::string& CustomerId, const std::string& Name, const std::string& Email, std::string feedback, int rate)
-			: Customer(CustomerId, Name, Email), feedback(feedback), rate(rate) {}
+		FeedBackSystem(const std::string& CustomerId, const std::string& Name, const std::string& Email, std::string Feedback, int Rate)
+			: Customer(CustomerId, Name, Email), Feedback(Feedback), Rate(Rate) {}
 		void ReceivedFeedback();
 	};
 }
