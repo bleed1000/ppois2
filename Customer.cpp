@@ -3,13 +3,13 @@ namespace Minimarket{
 	{
 	protected:
 		std::string CustomerId;
-		std::string name;
-		std::string email;
+		std::string Name;
+		std::string Email;
 	public:
 		Customer(const std::string& CustomerCustomerId, const std::string& CustomerName, const std::string& CustomerEmail)
-			: CustomerId(CustomerCustomerId), name(CustomerName), email(CustomerEmail) {}
+			: CustomerId(CustomerCustomerId), Name(CustomerName), Email(CustomerEmail) {}
 		void place_order(const Product& product);
 
-		std::string GetName() const { return name; }
+		std::string GetName() const { return Name; }
 	};
 }
