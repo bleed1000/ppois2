@@ -1,7 +1,7 @@
 namespace Minimarket{
 	class Check : protected PaymentProcessor {
 	public:
-		Check(double SumOnCard) : PaymentProcessor(SumOnCard) {}
+		Check(double sumOnCard) : PaymentProcessor(sumOnCard) {}
 		void Printing();
 	};
 }
