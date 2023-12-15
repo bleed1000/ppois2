@@ -12,7 +12,7 @@ namespace Minimarket {
 	}
 
 	void Customer::place_order(const Product& product) {
-		cout << "Customer " << name << " with " << CustomerId << " id ordered " << product.GetName();
+		cout << "Customer " << name << " with " << customerId << " id ordered " << product.GetName();
 	}
 
 	double DiscountableProduct::ApplyDiscount(double originalPrice) {
@@ -32,7 +32,7 @@ namespace Minimarket {
 	}
 
 	double PaymentProcessor::RemainingMoney() {
-		return SumOnCard -= total;
+		return sumOnCard -= total;
 	}
 
 	void Check::Printing() {
