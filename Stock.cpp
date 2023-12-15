@@ -1,12 +1,12 @@
 namespace Minimarket{
 	class Stock {
 	protected:
-		std::string ProductName;
-		std::string ProductId;
-		int Quantity;
+		std::string productName;
+		std::string productId;
+		int quantity;
 	public:
-		Stock(std::string ProductName, std::string ProductId, int Quantity)
-			: ProductName(ProductName), ProductId(ProductId), Quantity(Quantity) {}
+		Stock(std::string productName, std::string productId, int quantity)
+			: productName(productName), productId(productId), quantity(quantity) {}
 
 		void StockInfo();
 	};
