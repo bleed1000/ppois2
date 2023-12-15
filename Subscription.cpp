@@ -1,8 +1,8 @@
 namespace Minimarket{
 	class Subscription {
 	protected:
-		int Duration;
+		int duration;
 	public:
-		void SubscriptionInfo(const Customer& Customer, int Duration);
+		void SubscriptionInfo(const Customer& customer, int duration);
 	};
 }
