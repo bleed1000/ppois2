@@ -1,18 +1,18 @@
 namespace Minimarket {
 	class Product {
 	public:
-		Product(const std::string& ProductName, double ProductPrice, int ProductQuantity)
-			: Name(ProductName), Price(ProductPrice), Quantity(ProductQuantity) {}
+		Product(const std::string& productName, double productPrice, int productQuantity)
+			: name(productName), price(productPrice), quantity(productQuantity) {}
 
 		void GetProductDetaitls();
 
-		const std::string& GetName() const { return Name; }
-		double GetPrice() const { return Price; }
-		int GetQuantity() const { return Quantity; }
+		const std::string& GetName() const { return name; }
+		double GetPrice() const { return price; }
+		int GetQuantity() const { return quantity; }
 	private:
-		std::string Name;
-		double Price;
-		int Quantity;
+		std::string name;
+		double price;
+		int quantity;
 
 
 	};
