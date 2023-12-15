@@ -1,10 +1,10 @@
 namespace Minimarket{
 	class PaymentProcessor : protected ShoppingCart {
 	protected:
-		double SumOnCard;
+		double sumOnCard;
 	public:
-		PaymentProcessor(double SumOnCard)
-			: SumOnCard(SumOnCard) {}
+		PaymentProcessor(double sumOnCard)
+			: SumOnCard(sumOnCard) {}
 		double RemainingMoney();
 	};	
 }
