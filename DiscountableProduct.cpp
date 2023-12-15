@@ -1,11 +1,11 @@
 namespace Minimarket{
 	class DiscountableProduct : public IDiscountable {
 	private:
-		double DiscountRate;
+		double discountRate;
 
 	public:
-		DiscountableProduct(double DiscountRate)
-			: DiscountRate(DiscountRate) {}
-		double ApplyDiscount(double OriginalPrice) override;
+		DiscountableProduct(double discountRate)
+			: DiscountRate(discountRate) {}
+		double ApplyDiscount(double originalPrice) override;
 	};
 }
