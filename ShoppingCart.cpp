@@ -1,10 +1,10 @@
 namespace Minimarket{
 	class ShoppingCart {
 	protected:
-		std::vector<Product> Products;
-		double Total = CalculateThePrice();
+		std::vector<Product> products;
+		double total = CalculateThePrice();
 	public:
-		void AddToCart(const Product& Product);
+		void AddToCart(const Product& product);
 
 		double CalculateThePrice();
 	};
